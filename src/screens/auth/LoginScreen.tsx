@@ -13,6 +13,7 @@ import Icon from 'react-native-vector-icons/Ionicons'
 import TouchableText from '../../components/auth/TouchableText'
 import BottomText from '../../components/auth/BottomText'
 import { signInWithGoogle } from '../../redux/SocialLogin'
+import { navigate } from '../../utils/NavigationUtil'
 
 
 const LoginScreen: React.FC = () => {
@@ -49,7 +50,7 @@ const LoginScreen: React.FC = () => {
 
                 <TouchableText
                     firstText="Use other email ID"
-                    onPress={() => { }}
+                    onPress={() => navigate("EmailScreen")}
                     style={{ marginVertical: 30, marginTop: 20 }}
                 />
 

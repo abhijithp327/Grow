@@ -1767,6 +1767,14 @@
 "@types/prop-types@*":
   version "15.7.13"
 
+"@types/react-native-material-ripple@^0.9.6":
+  version "0.9.6"
+  resolved "https://registry.npmjs.org/@types/react-native-material-ripple/-/react-native-material-ripple-0.9.6.tgz"
+  integrity sha512-4rIu/tAMHejFN9jyMNrknO8OOJVSEQJK07/8BPj61wkLaCesy3nPsaKF0ASCvLTtQ6sdOPI1sRQjSE/euHO/YQ==
+  dependencies:
+    "@types/react" "*"
+    react-native "*"
+
 "@types/react-native-vector-icons@^6.4.18":
   version "6.4.18"
   resolved "https://registry.npmjs.org/@types/react-native-vector-icons/-/react-native-vector-icons-6.4.18.tgz"
@@ -5273,7 +5281,7 @@ react-native-webview@^13.12.3:
     escape-string-regexp "^4.0.0"
     invariant "2.2.4"
 
-react-native@^0.75.4:
+react-native@*, react-native@^0.75.4:
   version "0.75.4"
   resolved "https://registry.npmjs.org/react-native/-/react-native-0.75.4.tgz"
   integrity sha512-Jehg4AMNIAXu9cn0/1jbTCoNg3tc+t6EekwucCalN8YoRmxGd/PY6osQTI/5fSAM40JQ4O8uv8Qg09Ycpb5sxQ==

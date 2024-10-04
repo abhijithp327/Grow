@@ -1,6 +1,8 @@
 import React from 'react'
 import Navigation from './src/navigation/Navigation'
 import { GoogleSignin } from "@react-native-google-signin/google-signin";
+import { Provider } from 'react-redux';
+import { store } from './src/redux/store';
 
 GoogleSignin.configure({
   webClientId:
@@ -13,7 +15,9 @@ GoogleSignin.configure({
 
 const App = () => {
   return (
-    <Navigation />
+    <Provider store={store}>
+      <Navigation />
+    </Provider>
   )
 }
 

@@ -6,6 +6,9 @@ import { useCustomTheme } from './Theme';
 import { navigationRef } from '../utils/NavigationUtil';
 import HomeScreen from '../screens/dashboard/HomeScreen';
 import LoginScreen from '../screens/auth/LoginScreen';
+import EmailScreen from '../screens/auth/EmailScreen';
+import EmailOtpScreen from '../screens/auth/EmailOtpScreen';
+import EmailPasswordScreen from '../screens/auth/EmailPasswordScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -39,6 +42,9 @@ const Navigation = () => {
             >
                 <Stack.Screen name="LoginScreen" component={LoginScreen} />
                 <Stack.Screen name="HomeScreen" component={HomeScreen} />
+                <Stack.Screen name="EmailScreen" component={EmailScreen} />
+                <Stack.Screen name="EmailOtpScreen" component={EmailOtpScreen} />
+                <Stack.Screen name="EmailPasswordScreen" component={EmailPasswordScreen} />
             </Stack.Navigator>
         </NavigationContainer>
 
