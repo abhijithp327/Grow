@@ -9,6 +9,7 @@ import LoginScreen from '../screens/auth/LoginScreen';
 import EmailScreen from '../screens/auth/EmailScreen';
 import EmailOtpScreen from '../screens/auth/EmailOtpScreen';
 import EmailPasswordScreen from '../screens/auth/EmailPasswordScreen';
+import SetPasswordScreen from '../screens/auth/SetPasswordScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -45,6 +46,7 @@ const Navigation = () => {
                 <Stack.Screen name="EmailScreen" component={EmailScreen} />
                 <Stack.Screen name="EmailOtpScreen" component={EmailOtpScreen} />
                 <Stack.Screen name="EmailPasswordScreen" component={EmailPasswordScreen} />
+                <Stack.Screen name="SetPasswordScreen" component={SetPasswordScreen} />
             </Stack.Navigator>
         </NavigationContainer>
 

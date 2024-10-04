@@ -23,7 +23,7 @@ const EmailOtpScreen = ({ route }: any) => {
       return;
     }
     setTimeout(() => {
-      navigate("EmailPasswordScreen", { email: route.params.email });
+      navigate("SetPasswordScreen", { email: route.params.email });
       setLoading(false);
     }, 2000);
   };
