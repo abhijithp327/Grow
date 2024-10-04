@@ -1,4 +1,4 @@
-import { View, Text, SafeAreaView, StyleSheet, Image, Touchable } from 'react-native'
+import { View, Text, SafeAreaView, StyleSheet, Image, Touchable, Alert } from 'react-native'
 import React from 'react'
 import CustomSafeAreaView from '../../components/global/CustomSafeAreaView'
 import CustomText from '../../components/global/CustomText'
@@ -12,6 +12,7 @@ import GoogleIcon from '../../assets/images/google.png'
 import Icon from 'react-native-vector-icons/Ionicons'
 import TouchableText from '../../components/auth/TouchableText'
 import BottomText from '../../components/auth/BottomText'
+import { signInWithGoogle } from '../../redux/SocialLogin'
 
 
 const LoginScreen: React.FC = () => {
@@ -37,14 +38,14 @@ const LoginScreen: React.FC = () => {
                 <SocialLoginButton
                     icon={<Image source={GoogleIcon} style={{ width: 20, height: 20 }} />}
                     text='Continue with Google'
-                    onPress={() => { }}
+                    onPress={() => signInWithGoogle()}
                 />
 
-                <SocialLoginButton
+                {/* <SocialLoginButton
                     icon={<Icon name="logo-apple" size={18} color='black' />}
                     text='Continue with Apple'
                     onPress={() => { }}
-                />
+                /> */}
 
                 <TouchableText
                     firstText="Use other email ID"

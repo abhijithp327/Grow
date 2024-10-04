@@ -1,4 +1,4 @@
-package com.grow
+package com.growwclo
 
 import android.app.Application
 import com.facebook.react.PackageList
